@@ -1,0 +1,21 @@
+{
+	"name": "todoapp",
+	"version": "1.0.0",
+	"description": "A todo app with a backend",
+	"main": "app.js",
+	"scripts": {
+		"client-install": "npm install --prefix client",
+		"start": "node app.js",
+		"server": "nodemon app.js",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+	},
+	"author": "Bluawofogbe Dominic",
+	"license": "ISC",
+	"dependencies": {
+		"concurrently": "^5.3.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.10.0"
+	}
+}

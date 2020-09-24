@@ -4,14 +4,19 @@ import React from "react";
 const Navbar = () => {
 	return (
 		<div className="navbar">
-			<a href="#" className="logo">
+			<span href="#" className="logo">
 				SidCorp
-			</a>
+			</span>
 			<ul className="nav ">
 				<li>
-					<span className="github" >
+					<a
+						href="https://github.com/Dominic2000code/React-todo-app"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="github"
+					>
 						GitHub
-					</span>
+					</a>
 				</li>
 			</ul>
 		</div>
